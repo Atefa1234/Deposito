@@ -19,11 +19,23 @@ public class CCuenta {
     public CCuenta() {
     }
 
-    public CCuenta(String nom, String cue, double sal, double tipo) {
+   public CCuenta(String nom, String cue, double sal, double tipo) {
         nombre = nom;
         cuenta = cue;
         saldo = sal;
+        tipoInterés = tipo; // Añadí esto para que el parámetro `tipo` se use
     }
+   // Getters
+    public String getNombre() { return nombre; }
+    public String getCuenta() { return cuenta; }
+    public double getSaldo() { return saldo; }
+    public double getTipoInterés() { return tipoInterés; }
+
+    // Setters
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setCuenta(String cuenta) { this.cuenta = cuenta; }
+    public void setSaldo(double saldo) { this.saldo = saldo; }
+    public void setTipoInterés(double tipoInterés) { this.tipoInterés = tipoInterés; }
 
     public double estado() {
         return saldo;
